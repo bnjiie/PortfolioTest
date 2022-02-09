@@ -1,21 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 
-function Detail() {
+function About() {
     return(
         <Container>
             <Background>
-                <img src="/images/night3.jpg" alt=''></img>
+                Detail
             </Background>
             <Content></Content>
         </Container>
     );
 }
 
-export default Detail
+export default About
 
 const Container = styled.div``
 
-const Background = styled.div``
+const Background = styled.div`
+    height: 100%;
+    width: 100%;
+`
 
 const Content = styled.div``
