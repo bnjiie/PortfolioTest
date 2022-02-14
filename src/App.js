@@ -6,26 +6,19 @@ import Header from './components/Header.js';
 import Section from './components/Section';
 import About from './components/About';
 import Programs from './components/Programs'
-import Contact from './components/Contact'
 import { BrowserRouter as Router, Switch, Route, Link, Routes } from 'react-router-dom';
 
-function App(){
+const App = () => {
   return (
     <div className="App">
       <Router>
-        <Header />
         <Routes>
-          <Route path='/'/>
-          <Route path='/About'/>
-          <Route path='/Programs'/>
-          <Route path='/Contact'/>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/About' element={<About/>}/>
+          <Route path='/Programs' element={<Programs/>}/>
         </Routes>
       </Router>
-
-
-          
-      <Home />
-      <Section />   
+         
     </div>
     
   );

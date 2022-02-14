@@ -3,51 +3,36 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import About from "./About";
 import Programs from "./Programs";
-import Contact from "./Contact";
+import { Button } from "@mui/material";
+import { render } from "@testing-library/react";
 
 
-function myHome() {
-    alert('You clicked me!');
-}
 
+const Header = () => {
 
-function Header (){
-
-    let navigate = useNavigate();
-
-    const myHome = () => {
-        let path = 'Home';
-        navigate(path)
-    }
-
+    const navigate = useNavigate();
     const myAbout = () => {
-        let path = ('/About')
-        navigate(path)
+        navigate('/About')
     }
-
+    const myHome = () => {
+        navigate('/')
+    }
     const myPrograms = () => {
-        let path = ('/Programs')
-        navigate(path)
+        navigate('/Programs')
     }
 
-    const myContact = () => {
-        let path = 'Contact';
-        navigate(path)
-    }
-
-
-    return (
+return (
         <div>
         <Container>
             <Menu>
                 <button onClick={(myHome)}>Home</button>
                 <button onClick={(myAbout)}>About</button>
-                <button onClick={(myPrograms)}>Programs</button>
-                <button onClick={(myContact)}>Contact</button>   
+                <button onClick={(myPrograms)}>Programs</button>  
             </Menu>
         </Container>
         </div>
     );
+
 }
 
 export default Header
