@@ -21,11 +21,13 @@ const ItemText = styled.div`
     position: absolute;
     top: 340px;
     left: 100px;
+    font-family: 'Fredoka One', cursive;
 
     h1 {
         font-size: 90px;
         margin: 0;
         padding: 0;
+
 
         animation: glow 2s ease-in-out infinite alternate;
     }

@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import images from "../images/night1.jpg";
 import Header from "./Header";
 
@@ -23,8 +23,7 @@ const About = () => {
                         <dt>Graduate of BS Electronics Engineer</dt>
                         <dd>~ at FEU Institute of Technology</dd>
                         <br />
-                        <dt>Work Experience:</dt>
-                        <br />
+                        <dt>Work Experiences:</dt>
                         <dt>Customer Support Engineer</dt>
                         <dd>~ Field Service Engineer</dd>
                         <dd>~ Medical Equiment and Supply</dd>
@@ -85,15 +84,19 @@ const Background = styled.div`
 const SubHeader = styled.div`
 diplay: flex;
 color: #76b5c2;
-font-size: 30px; 
+font-size: 50px; 
 text-align: center;
 margin-top: 60px;
+font-family: 'Rowdies', cursive;
+
+
 `
 
 const Content = styled.div`
 display: flex;
 flex-direction:row;
 margin-top: 20px;
+font-family: 'Orbitron', sans-serif;
 `
 
 const Content1 = styled.div`

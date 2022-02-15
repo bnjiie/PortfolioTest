@@ -1,11 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import About from "./About";
-import Programs from "./Programs";
-import { Button } from "@mui/material";
-import { render } from "@testing-library/react";
-
 
 
 const Header = () => {
@@ -20,6 +15,7 @@ const Header = () => {
     const myPrograms = () => {
         navigate('/Programs')
     }
+
 
 return (
         <div>
@@ -49,7 +45,7 @@ const Container = styled.div`
         all: unset;
         cursor: pointer;
         font-weight: 600;
-        padding: 0 10px;
+        padding: 0 20px;
         flex-wrap: none;
     }
 `
